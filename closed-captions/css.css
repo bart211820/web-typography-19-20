@@ -1,3 +1,69 @@
+body{
+	background-color: #0A0B0B;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#content{
+	position: absolute;
+	width: 90%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 5%;
+	z-index: 10;
+}
+
+iframe{
+	display: block;
+	margin: 40px auto 0px;
+}
+
+#closed-captions{
+	display: block;
+	margin: 0px auto;
+	width: 600px;
+}
+
+#heartbeatInner{
+	background-color: rgba(130,130,130,1);
+    width: 80vw;
+    height: 80vh;
+    display: block;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 50px rgba(130,130,130,1);
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+}
+
+#heartbeatOuter{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    box-shadow: inset 0px 0px 61px 61px rgba(0,0,0,1);
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+
+#alertLeft{
+	width: 1%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+}
+
+#alertRight{
+	width: 1%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    right: 0;
+}
+
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -9,6 +75,7 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+	width: 590px;
 }
 #closed-captions .on {
 	opacity: 1;
@@ -17,8 +84,34 @@ Feel free to adjust the defaults to your needs.
 	transition: .2s;
 	opacity: 0;
 }
-.voice1 {
-	font-style: italic;
+.voice1 { /* Computer guy */
+	font-family: "Brenner Mono Regular Italic";
+	text-align: right;
+}
+.voice2 { /* Main guy */
+	font-family: "Brenner Slab";
+	text-align: left;
+	font-weight: 200;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+.voice2Alone{
+	font-family: "Brenner Slab";
+	text-align: center;
+	font-weight: 200;
+	margin-top: 20px;
+}
+.voice3 { /* Angry guy */
+	font-family: "Brenner Sans";
+	text-align: center;
+	font-weight: bold;
+	font-size: 31px;
+	color: #BA2424;
+	text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.voice4 { /* The other guy */
+	font-family: "Brenner";
+	text-align: right;
 }
 
 /* **********************************************
@@ -29,7 +122,7 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
-.p0 span {
+/*.p0 span {
 	opacity: 0;
 	font-family: brenner;
 }
@@ -93,4 +186,672 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s 3.7s;
 	font-family: "brenner slab";
+}*/
+
+
+
+.sound5{
+	background-color: #5A625F;
+	color: white;
+}
+
+.sound11{
+	background-color: #BBC2B2;
+	color: black;
+}
+
+.sound14{
+	background-color: #080E0E;
+	color: white;
+}
+
+.sound15{
+	background-color: #BBC2B2;
+	color: black;
+}
+
+.sound16{
+	background-color: #0A0A0E;
+	color: white;
+}
+
+
+.p3{
+	margin-top: 20px;
+}
+
+.p4{
+	margin-top: 50px;
+}
+
+.p5{
+	margin-top: 80px;
+}
+
+.p7{
+	margin-top: 110px;
+}
+
+
+.sound0{
+    animation: sound0BackgroundChange 20s linear;
+}
+@-webkit-keyframes sound0BackgroundChange {
+    0% {
+        background-color: #0A0B0B;
+    }
+    13% {
+        background-color: #0A0A0E;
+    }
+    25% {
+    	background-color: #030203;
+    }
+    35% {
+    	background-color: #030203;
+    }
+    45% {
+        background-color: #1F2A2F;
+    }
+    98% {
+        background-color: #1F2A2F;
+    }
+    99% {
+        background-color: #5A625F;
+    }
+    100% {
+        background-color: #5A625F;
+    }
+}
+.sound0 #heartbeatOuter{
+	animation: sound0heartbeat 20s linear;
+}
+.sound0 #heartbeatInner{
+	animation: sound0heartbeat 20s linear;
+}
+@-webkit-keyframes sound0heartbeat {
+	0% {
+        opacity: 0;
+    }
+    7% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 0.2;
+    }
+    9% {
+        opacity: 0.2;
+    }
+    12% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 0;
+    }
+    17% {
+        opacity: 0.2;
+    }
+    18% {
+        opacity: 0.2;
+    }
+    21% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    26% {
+        opacity: 0.2;
+    }
+    27% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0;
+    }
+    34% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0.2;
+    }
+    36% {
+        opacity: 0.2;
+    }
+    39% {
+        opacity: 0;
+    }
+    43% {
+        opacity: 0;
+    }
+    44% {
+        opacity: 0.2;
+    }
+    45% {
+        opacity: 0.2;
+    }
+    48% {
+        opacity: 0;
+    }
+    53% {
+        opacity: 0;
+    }
+    54% {
+        opacity: 0.2;
+    }
+    55% {
+        opacity: 0.2;
+    }
+    58% {
+        opacity: 0;
+    }
+}
+
+.sound1 #alertLeft{
+	animation: alertGoRed 2s linear;
+	background-color: #AF140F;
+	box-shadow: 10px 0px 34px 72px #AF140F;
+}
+.sound1 #alertRight{
+	animation: alertGoRed 2s linear;
+	background-color: #AF140F;
+	box-shadow: 10px 0px 34px 72px #AF140F;
+}
+@-webkit-keyframes alertGoRed {
+	0% {
+        opacity: 0;
+        width: 1%;
+    }
+    10% {
+        opacity: 0.8;
+        width: 8%;
+    }
+    12% { width: 7.7%; }
+    14% { width: 8.1%; }
+    16% { width: 7.9%; }
+    18% { width: 8.2%; }
+
+	20% { width: 7.9%; }
+    22% { width: 8.4%; }
+    24% { width: 7.6%; }
+    26% { width: 8.2%; }
+    28% { width: 8%; }
+
+    30% { width: 8.4%; }
+    32% { width: 7.9%; }
+    34% { width: 8.1%; }
+    36% { width: 7.7%; }
+    38% { width: 8%; }
+
+    40% { width: 7.9%; }
+    42% { width: 8.4%; }
+    44% { width: 7.6%; }
+    46% { width: 8.2%; }
+    48% { width: 8%; }
+    
+    50% { width: 8.4%; }
+    52% { width: 7.9%; }
+    54% { width: 8.1%; }
+    56% { width: 7.7%; }
+    58% { width: 8%; }
+
+    60% { width: 7.9%; }
+    62% { width: 8.4%; }
+    64% { width: 7.6%; }
+    66% { width: 8.2%; }
+    68% { width: 8%; }
+
+    70% {
+        opacity: 0.8;
+        width: 8%;
+    }
+    100% {
+        opacity: 0;
+        width: 1%;
+    }
+}
+
+.sound2 #alertLeft{
+	animation: alertGoBlue 2s linear;
+	background-color: #0028C3;
+	box-shadow: 10px 0px 34px 72px #0028C3;
+}
+.sound2 #alertRight{
+	animation: alertGoBlue 2s linear;
+	background-color: #0028C3;
+	box-shadow: 10px 0px 34px 72px #0028C3;
+}
+@-webkit-keyframes alertGoBlue {
+	0% {
+        opacity: 0;
+        width: 1%;
+    }
+    10% {
+        opacity: 0.8;
+        width: 8%;
+    }
+    12% { width: 7.7%; }
+    14% { width: 8.1%; }
+    16% { width: 7.9%; }
+    18% { width: 8.2%; }
+
+	20% { width: 7.9%; }
+    22% { width: 8.4%; }
+    24% { width: 7.6%; }
+    26% { width: 8.2%; }
+    28% { width: 8%; }
+
+    30% { width: 8.4%; }
+    32% { width: 7.9%; }
+    34% { width: 8.1%; }
+    36% { width: 7.7%; }
+    38% { width: 8%; }
+
+    40% { width: 7.9%; }
+    42% { width: 8.4%; }
+    44% { width: 7.6%; }
+    46% { width: 8.2%; }
+    48% { width: 8%; }
+    
+    50% { width: 8.4%; }
+    52% { width: 7.9%; }
+    54% { width: 8.1%; }
+    56% { width: 7.7%; }
+    58% { width: 8%; }
+
+    60% { width: 7.9%; }
+    62% { width: 8.4%; }
+    64% { width: 7.6%; }
+    66% { width: 8.2%; }
+    68% { width: 8%; }
+
+    70% {
+        opacity: 0.8;
+        width: 8%;
+    }
+    100% {
+        opacity: 0;
+        width: 1%;
+    }
+}
+
+.sound3 #content{
+	animation: contentGoAllShaky1 2.7s linear;
+}
+@-webkit-keyframes contentGoAllShaky1 {
+	0% {
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    18% {
+    	margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    23% {
+    	margin-top: 50px;
+    	transform: rotate(-6deg);
+    }
+    25% {
+    	margin-top: 54px;
+    	transform: rotate(3deg);
+    }
+    27% {
+    	margin-top: 48px;
+    	transform: rotate(-4deg);
+    }
+    29% {
+    	margin-top: 54px;
+    	transform: rotate(2deg);
+    }
+    31% {
+    	margin-top: 52px;
+    	transform: rotate(-5deg);
+    }
+    33% {
+    	margin-top: 58px;
+    	transform: rotate(5deg);
+    }
+    35% {
+    	margin-top: 44px;
+    	transform: rotate(-1deg);
+    }
+    37% {
+    	margin-top: 49px;
+    	transform: rotate(2deg);
+    }
+    59% {
+    	margin-top: 50px;
+    	transform: rotate(6deg);
+    }
+    61% {
+    	margin-top: -30px;
+    	transform: rotate(-3deg);
+    }
+    79% {
+    	margin-top: -37px;
+    	transform: rotate(-4deg);
+    }
+    90%{
+    	margin-top: 10px;
+    	transform: rotate(2deg);
+    }
+    92%{
+    	margin-top: 0px;
+    	transform: rotate(0deg);
+    }
+    100%{
+    	margin-top: 0px;
+    	transform: rotate(0deg);
+    }
+}
+
+.sound7 #content{
+	animation: contentGoAllShaky2 2.7s linear;
+}
+@-webkit-keyframes contentGoAllShaky2 {
+	0% {
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    18% {
+    	margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    23% {
+    	margin-top: 50px;
+    	transform: rotate(-6deg);
+    }
+    25% {
+    	margin-top: 54px;
+    	transform: rotate(3deg);
+    }
+    27% {
+    	margin-top: 48px;
+    	transform: rotate(-4deg);
+    }
+    29% {
+    	margin-top: 54px;
+    	transform: rotate(2deg);
+    }
+    31% {
+    	margin-top: 52px;
+    	transform: rotate(-5deg);
+    }
+    33% {
+    	margin-top: 58px;
+    	transform: rotate(5deg);
+    }
+    35% {
+    	margin-top: 44px;
+    	transform: rotate(-1deg);
+    }
+    37% {
+    	margin-top: 49px;
+    	transform: rotate(2deg);
+    }
+    59% {
+    	margin-top: 50px;
+    	transform: rotate(6deg);
+    }
+    61% {
+    	margin-top: -30px;
+    	transform: rotate(-3deg);
+    }
+    79% {
+    	margin-top: -37px;
+    	transform: rotate(-4deg);
+    }
+    90%{
+    	margin-top: 10px;
+    	transform: rotate(2deg);
+    }
+    92%{
+    	margin-top: 0px;
+    	transform: rotate(0deg);
+    }
+    100%{
+    	margin-top: 0px;
+    	transform: rotate(0deg);
+    }
+}
+
+.sound9 #content{
+	animation: contentGoAllShaky3 2.7s linear;
+}
+@-webkit-keyframes contentGoAllShaky3 {
+	0% {
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    5% {
+    	margin-top: 50px;
+    	transform: rotate(-6deg);
+    }
+    7% {
+    	margin-top: 54px;
+    	transform: rotate(3deg);
+    }
+    9% {
+    	margin-top: 48px;
+    	transform: rotate(-4deg);
+    }
+    11% {
+    	margin-top: 54px;
+    	transform: rotate(2deg);
+    }
+    13% {
+    	margin-top: 52px;
+    	transform: rotate(-5deg);
+    }
+    15% {
+    	margin-top: 58px;
+    	transform: rotate(5deg);
+    }
+    17% {
+    	margin-top: 44px;
+    	transform: rotate(-1deg);
+    }
+    19% {
+    	margin-top: 49px;
+    	transform: rotate(2deg);
+    }
+    41% {
+    	margin-top: 50px;
+    	transform: rotate(6deg);
+    }
+    43% {
+    	margin-top: -30px;
+    	transform: rotate(-3deg);
+    }
+    61% {
+    	margin-top: -37px;
+    	transform: rotate(-4deg);
+    }
+    72%{
+    	margin-top: 10px;
+    	transform: rotate(2deg);
+    }
+    74%{
+    	margin-top: 0px;
+    	transform: rotate(0deg);
+    }
+    100%{
+    	margin-top: 0px;
+    	transform: rotate(0deg);
+    }
+}
+
+.sound11 #heartbeatOuter{
+	animation: whistle1 42.6s linear;
+}
+@-webkit-keyframes whistle1 {
+	0% {
+        opacity: 0;
+    }
+    99%{
+    	opacity: 0.8;
+    }
+    100%{
+    	opacity: 0;
+    }
+}
+.sound11 #content{
+	animation: contentMoveToCenterV1 42.6s linear;
+}
+@-webkit-keyframes contentMoveToCenterV1 {
+	0% {
+        padding-top: 0px;
+    }
+    99%{
+    	padding-top: 10vh;
+    }
+    100%{
+    	padding-top: 0px;
+    }
+}
+.sound11 #content iframe{
+	animation: screenGetBigger1 42.6s linear;
+}
+@-webkit-keyframes screenGetBigger1 {
+	0% {
+        transform: scale(1, 1);
+        padding-bottom: 0px;
+    }
+    99%{
+    	transform: scale(1.2, 1.2);
+    	padding-bottom: 40px;
+    }
+    100%{
+    	transform: scale(1, 1);
+    	padding-bottom: 0px;
+    }
+}
+
+.sound13 #heartbeatOuter{
+	animation: whistle2 43.9s linear;
+}
+@-webkit-keyframes whistle2 {
+	0% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 0.4;
+    }
+    99%{
+    	opacity: 1;
+    }
+    100%{
+    	opacity: 0;
+    }
+}
+.sound13 #content{
+	animation: contentMoveToCenterV2 43.9s linear;
+}
+@-webkit-keyframes contentMoveToCenterV2 {
+	0% {
+        padding-top: 0px;
+    }
+    3% {
+        padding-top: 5vh;
+    }
+    99%{
+    	padding-top: 12vh;
+    }
+    100%{
+    	padding-top: 0px;
+    }
+}
+.sound13 #content iframe{
+	animation: screenGetBigger2 43.9s linear;
+}
+@-webkit-keyframes screenGetBigger2 {
+	0% {
+        transform: scale(1, 1);
+        padding-bottom: 0px;
+    }
+    3% {
+        transform: scale(1.1, 1.1);
+        padding-bottom: 20px;
+    }
+    99%{
+    	transform: scale(1.3, 1.3);
+    	padding-bottom: 48px;
+    }
+    100%{
+    	transform: scale(1, 1);
+    	padding-bottom: 0px;
+    }
+}
+
+
+.p6.on{
+    animation: p6interrupt 0.3s ease-out;
+}
+@-webkit-keyframes p6interrupt {
+    0% {
+        margin-top: -235px;
+    }
+    95% {
+        margin-top: 47px;
+    }
+    100% {
+        margin-top: 45px;
+    }
+}
+
+.sound6 .p3{
+	animation: p3goDownAndUp 2.5s ease-in-out;
+}
+@-webkit-keyframes p3goDownAndUp {
+    0% {
+        margin-top: 20px;
+    }
+    20% {
+    	margin-top: 130px;
+    	opacity: 0.1;
+    }
+    40% {
+    	margin-top: 130px;
+    	opacity: 0.1;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+.sound6 .p4{
+	animation: p4goDownAndUp 2.5s ease-in-out;
+}
+@-webkit-keyframes p4goDownAndUp {
+    0% {
+        margin-top: 50px;
+    }
+    20% {
+    	margin-top: 160px;
+    	opacity: 0.08;
+    }
+    40% {
+    	margin-top: 160px;
+    	opacity: 0.08;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
+.sound6 .p5{
+	animation: p5goDownAndUp 2.5s ease-in-out;
+}
+@-webkit-keyframes p5goDownAndUp {
+    0% {
+        margin-top: 80px;
+    }
+    20% {
+    	margin-top: 190px;
+    	opacity: 0.05;
+    }
+    40% {
+    	margin-top: 190px;
+    	opacity: 0.05;
+    }
+    100% {
+        margin-top: 80px;
+    }
 }
