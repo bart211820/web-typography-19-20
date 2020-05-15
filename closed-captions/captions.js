@@ -2,11 +2,11 @@ captions.push(['3.8','8.1']);
 captions.push(['8.1','10']);
 captions.push(['10.8','12.5']);
 	//And blood-black nothingness began to spin
-captions.push(['12.5','31.6']);
-captions.push(['17.369','31.6']);
-captions.push(['20.1','31.6']);
+captions.push(['12.5','15.6']);
+captions.push(['17.369','20']);
+captions.push(['20.1','25.5']);
 	//Fuck off, skin-job!
-captions.push(['23.3','24.9']);
+captions.push(['23.3','25.2']);
 	
 captions.push(['26.8','31.6']);
 captions.push(['32.7','33']);
