@@ -6,6 +6,10 @@ Voor de opdracht van web-typography 19-20 heb ik aan een fragment uit de film *B
 
 Dit project is uitgevoerd specifiek voor Marie van Driessche, een Interaction Designer bij VPRO wie al heel haar level niet kan horen. Voor haar is dit fragment bewerkt en het is dus belangrijk dat alles voor haar duidelijk is. Hierom heb ik op 2 verschillende momenten het fragment met mijn toevoegingen aan Marie laten zien en om feedback gevraagd, hierover later meer.
 
+Het eind resultaat van dit project is te vinden op deze link: https://bart211820.github.io/web-typography-19-20/closed-captions/
+
+Ik zal nu vertellen hoe ik tot dit resultaat ben gekomen:
+
 ## Versie 1
 Toen ik de opdracht had ontvangen was ik meteen aan de slag gegaan, en heb ik verschillende elementen toegevoegd voor de eerste test versie.
 
