@@ -98,15 +98,15 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 { /* Computer guy */
 	font-family: "Brenner Mono Regular";
-	text-align: right;
+	text-align: left;
     font-size: 17px;
 }
 .voice2 { /* Main guy */
 	font-family: "Brenner Slab";
-	text-align: left;
+	text-align: right;
     font-weight: 200;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-right: 10px;
     font-style: Italic;
 }
 .voice2Alone{
@@ -124,7 +124,7 @@ Feel free to adjust the defaults to your needs.
 }
 .voice4 { /* The other guy */
 	font-family: "Brenner";
-	text-align: right;
+	text-align: left;
 }
 
 /* **********************************************
