@@ -97,8 +97,9 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 { /* Computer guy */
-	font-family: "Brenner Mono Regular Italic";
+	font-family: "Brenner Mono Regular";
 	text-align: right;
+    font-size: 17px;
 }
 .voice2 { /* Main guy */
 	font-family: "Brenner Slab";
@@ -106,6 +107,7 @@ Feel free to adjust the defaults to your needs.
     font-weight: 200;
     margin-top: 30px;
     margin-left: 50px;
+    font-style: Italic;
 }
 .voice2Alone{
 	font-family: "Brenner Slab";
@@ -200,6 +202,36 @@ You probably want to change the styling.
 }*/
 
 
+#disturbanceDiv{
+    position: absolute;
+    left: 50%;
+}
+
+#disturbanceDiv div{
+    position: relative;
+    left: -50%;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Brenner Mono Regular";
+    margin-top: 31.5vh;
+    z-index: 900;
+    text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+    opacity: 0;
+}
+
+#metalicBackground{
+    width: 100%;
+    height: 100vh;
+    background-image: url(metal.png);
+    opacity: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .sound5{
 	background-color: #5A625F;
@@ -669,6 +701,161 @@ You probably want to change the styling.
     }
 }
 
+
+
+.sound3 #metalicBackground{
+    animation: metalBackgroundShow1 2.7s linear;
+}
+@-webkit-keyframes metalBackgroundShow1 {
+    0% {
+        opacity: 0;
+    }
+    18% {
+        opacity: 0;
+    }
+    19% {
+        opacity: 0.1;
+    }
+    99% {
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.sound7 #metalicBackground{
+    animation: metalBackgroundShow2 2.7s linear;
+}
+@-webkit-keyframes metalBackgroundShow2 {
+    0% {
+        opacity: 0;
+    }
+    18% {
+        opacity: 0;
+    }
+    19% {
+        opacity: 0.1;
+    }
+    99% {
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.sound9 #metalicBackground{
+    animation: metalBackgroundShow3 2.1s linear;
+}
+@-webkit-keyframes metalBackgroundShow3 {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0.1;
+    }
+    99% {
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.sound3 #heartbeatOuter{
+    animation: metalRedGlow1 2.7s linear;
+}
+@-webkit-keyframes metalRedGlow1 {
+    0% {
+        opacity: 0;
+    }
+    18% {
+        opacity: 0;
+    }
+    19% {
+        opacity: 0.1;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    59% {
+        opacity: 0.1;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    61%{
+        opacity: 0.3;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    99% {
+        opacity: 0.3;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    100%{
+        opacity: 0;
+        box-shadow: inset 0px 0px 61px 61px rgba(0,0,0,1);
+    }
+}
+
+.sound7 #heartbeatOuter{
+    animation: metalRedGlow2 2.7s linear;
+}
+@-webkit-keyframes metalRedGlow2 {
+    0% {
+        opacity: 0;
+    }
+    18% {
+        opacity: 0;
+    }
+    19% {
+        opacity: 0.1;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    59% {
+        opacity: 0.1;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    61%{
+        opacity: 0.3;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    99% {
+        opacity: 0.3;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    100%{
+        opacity: 0;
+        box-shadow: inset 0px 0px 61px 61px rgba(0,0,0,1);
+    }
+}
+
+.sound9 #heartbeatOuter{
+    animation: metalRedGlow3 2.1s linear;
+}
+@-webkit-keyframes metalRedGlow3 {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0.1;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    39% {
+        opacity: 0.1;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    41% {
+        opacity: 0.3;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    99% {
+        opacity: 0.3;
+        box-shadow: inset 0px 0px 61px 61px rgba(255,0,0,1);
+    }
+    100%{
+        opacity: 0;
+        box-shadow: inset 0px 0px 61px 61px rgba(0,0,0,1);
+    }
+}
+
 .sound11 #heartbeatOuter{
 	animation: whistle1 42.6s linear;
 }
@@ -712,6 +899,218 @@ You probably want to change the styling.
     100%{
     	transform: scale(1, 1);
     	padding-bottom: 0px;
+    }
+}
+.sound11 #disturbanceDiv div{
+    animation: showDisturbance1 42.5s linear;
+}
+@-webkit-keyframes showDisturbance1 {
+    0% {
+        opacity: 0;
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    2%{
+        margin-left: 35px;
+        opacity: 0.02;
+        text-shadow: 5px 0px red;
+    }
+    5%{
+        margin-left: -35px;
+        opacity: 0.05;
+        text-shadow: 0px 5px blue;
+    }
+    7%{
+        margin-left: 35px;
+        opacity: 0.07;
+        text-shadow: -5px 0px red;
+    }
+    10%{
+        margin-left: -35px;
+        opacity: 0.1;
+        text-shadow: 0px -5px blue;
+    }
+    12%{
+        margin-left: 35px;
+        opacity: 0.12;
+        text-shadow: 5px 0px red;
+    }
+    15%{
+        margin-left: -35px;
+        opacity: 0.15;
+        text-shadow: 0px 5px blue;
+    }
+    17%{
+        margin-left: 35px;
+        opacity: 0.17;
+        text-shadow: -5px 0px red;
+    }
+    20%{
+        margin-left: -35px;
+        opacity: 0.2;
+        text-shadow: 0px -5px blue;
+    }
+    22%{
+        margin-left: 35px;
+        opacity: 0.22;
+        text-shadow: 5px 0px red;
+    }
+    25%{
+        margin-left: -35px;
+        opacity: 0.25;
+        text-shadow: 0px 5px blue;
+    }
+    27%{
+        margin-left: 35px;
+        opacity: 0.27;
+        text-shadow: -5px 0px red;
+    }
+    30%{
+        margin-left: -35px;
+        opacity: 0.3;
+        text-shadow: 0px -5px blue;
+    }
+    32%{
+        margin-left: 35px;
+        opacity: 0.32;
+        text-shadow: 5px 0px red;
+    }
+    35%{
+        margin-left: -35px;
+        opacity: 0.35;
+        text-shadow: 0px 5px blue;
+    }
+    37%{
+        margin-left: 35px;
+        opacity: 0.37;
+        text-shadow: -5px 0px red;
+    }
+    40%{
+        margin-left: -35px;
+        opacity: 0.4;
+        text-shadow: 0px -5px blue;
+    }
+    42%{
+        margin-left: 35px;
+        opacity: 0.42;
+        text-shadow: 5px 0px red;
+    }
+    45%{
+        margin-left: -35px;
+        opacity: 0.45;
+        text-shadow: 0px 5px blue;
+    }
+    47%{
+        margin-left: 35px;
+        opacity: 0.47;
+        text-shadow: -5px 0px red;
+    }
+    50%{
+        margin-left: -35px;
+        opacity: 0.5;
+        text-shadow: 0px -5px blue;
+    }
+    52%{
+        margin-left: 35px;
+        opacity: 0.52;
+        text-shadow: 5px 0px red;
+    }
+    55%{
+        margin-left: -35px;
+        opacity: 0.55;
+        text-shadow: 0px 5px blue;
+    }
+    57%{
+        margin-left: 35px;
+        opacity: 0.57;
+        text-shadow: -5px 0px red;
+    }
+    60%{
+        margin-left: -35px;
+        opacity: 0.6;
+        text-shadow: 0px -5px blue;
+    }
+    62%{
+        margin-left: 35px;
+        opacity: 0.62;
+        text-shadow: 5px 0px red;
+    }
+    65%{
+        margin-left: -35px;
+        opacity: 0.65;
+        text-shadow: 0px 5px blue;
+    }
+    67%{
+        margin-left: 35px;
+        opacity: 0.67;
+        text-shadow: -5px 0px red;
+    }
+    70%{
+        margin-left: -35px;
+        opacity: 0.7;
+        text-shadow: 0px -5px blue;
+    }
+    72%{
+        margin-left: 35px;
+        opacity: 0.72;
+        text-shadow: 5px 0px red;
+    }
+    75%{
+        margin-left: -35px;
+        opacity: 0.75;
+        text-shadow: 0px 5px blue;
+    }
+    77%{
+        margin-left: 35px;
+        opacity: 0.77;
+        text-shadow: -5px 0px red;
+    }
+    80%{
+        margin-left: -35px;
+        opacity: 0.8;
+        text-shadow: 0px -5px blue;
+    }
+    82%{
+        margin-left: 35px;
+        opacity: 0.82;
+        text-shadow: 5px 0px red;
+    }
+    85%{
+        margin-left: -35px;
+        opacity: 0.85;
+        text-shadow: 0px 5px blue;
+    }
+    87%{
+        margin-left: 35px;
+        opacity: 0.87;
+        text-shadow: -5px 0px red;
+    }
+    90%{
+        margin-left: -35px;
+        opacity: 0.9;
+        text-shadow: 0px -5px blue;
+    }
+    92%{
+        margin-left: 35px;
+        opacity: 0.92;
+        text-shadow: 5px 0px red;
+    }
+    95%{
+        margin-left: -35px;
+        opacity: 0.95;
+        text-shadow: 0px 5px blue;
+    }
+    97%{
+        margin-left: 35px;
+        opacity: 0.97;
+        text-shadow: -5px 0px red;
+    }
+    99.9%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+    100%{
+        opacity: 0;
     }
 }
 
@@ -770,6 +1169,199 @@ You probably want to change the styling.
     	padding-bottom: 0px;
     }
 }
+.sound13 #disturbanceDiv div{
+    animation: showDisturbance2 43.4s linear;
+}
+@-webkit-keyframes showDisturbance2 {
+    0% {
+        opacity: 0;
+        font-size: 50px;
+        margin-left: 0px;
+    }
+    2%{
+        margin-left: 35px;
+        opacity: 0;
+        text-shadow: 5px 0px red;
+    }
+    5%{
+        margin-left: -35px;
+        opacity: 0.55;
+        text-shadow: 0px 5px blue;
+    }
+    7%{
+        margin-left: 35px;
+        opacity: 0.57;
+        text-shadow: -5px 0px red;
+    }
+    10%{
+        margin-left: -35px;
+        opacity: 0.6;
+        text-shadow: 0px -5px blue;
+    }
+    12%{
+        margin-left: 35px;
+        opacity: 0.62;
+        text-shadow: 5px 0px red;
+    }
+    15%{
+        margin-left: -35px;
+        opacity: 0.65;
+        text-shadow: 0px 5px blue;
+    }
+    17%{
+        margin-left: 35px;
+        opacity: 0.67;
+        text-shadow: -5px 0px red;
+    }
+    20%{
+        margin-left: -35px;
+        opacity: 0.7;
+        text-shadow: 0px -5px blue;
+    }
+    22%{
+        margin-left: 35px;
+        opacity: 0.72;
+        text-shadow: 5px 0px red;
+    }
+    25%{
+        margin-left: -35px;
+        opacity: 0.75;
+        text-shadow: 0px 5px blue;
+    }
+    27%{
+        margin-left: 35px;
+        opacity: 0.77;
+        text-shadow: -5px 0px red;
+    }
+    30%{
+        margin-left: -35px;
+        opacity: 0.8;
+        text-shadow: 0px -5px blue;
+    }
+    32%{
+        margin-left: 35px;
+        opacity: 0.82;
+        text-shadow: 5px 0px red;
+    }
+    35%{
+        margin-left: -35px;
+        opacity: 0.85;
+        text-shadow: 0px 5px blue;
+    }
+    37%{
+        margin-left: 35px;
+        opacity: 0.87;
+        text-shadow: -5px 0px red;
+    }
+    40%{
+        margin-left: -35px;
+        opacity: 0.9;
+        text-shadow: 0px -5px blue;
+    }
+    42%{
+        margin-left: 35px;
+        opacity: 0.92;
+        text-shadow: 5px 0px red;
+    }
+    45%{
+        margin-left: -35px;
+        opacity: 0.95;
+        text-shadow: 0px 5px blue;
+    }
+    47%{
+        margin-left: 35px;
+        opacity: 0.97;
+        text-shadow: -5px 0px red;
+    }
+    50%{
+        margin-left: -35px;
+        opacity: 1;
+        text-shadow: 0px -5px blue;
+    }
+    52%{
+        margin-left: 35px;
+        text-shadow: 5px 0px red;
+    }
+    55%{
+        margin-left: -35px;
+        text-shadow: 0px 5px blue;
+    }
+    57%{
+        margin-left: 35px;
+        text-shadow: -5px 0px red;
+    }
+    60%{
+        margin-left: -35px;
+        text-shadow: 0px -5px blue;
+    }
+    62%{
+        margin-left: 35px;
+        text-shadow: 5px 0px red;
+    }
+    65%{
+        margin-left: -35px;
+        text-shadow: 0px 5px blue;
+    }
+    67%{
+        margin-left: 35px;
+        text-shadow: -5px 0px red;
+    }
+    70%{
+        margin-left: -35px;
+        text-shadow: 0px -5px blue;
+    }
+    72%{
+        margin-left: 35px;
+        text-shadow: 5px 0px red;
+    }
+    75%{
+        margin-left: -35px;
+        text-shadow: 0px 5px blue;
+    }
+    77%{
+        margin-left: 35px;
+        text-shadow: -5px 0px red;
+    }
+    80%{
+        margin-left: -35px;
+        text-shadow: 0px -5px blue;
+    }
+    82%{
+        margin-left: 35px;
+        text-shadow: 5px 0px red;
+    }
+    85%{
+        margin-left: -35px;
+        text-shadow: 0px 5px blue;
+    }
+    87%{
+        margin-left: 35px;
+        text-shadow: -5px 0px red;
+    }
+    90%{
+        margin-left: -35px;
+        text-shadow: 0px -5px blue;
+    }
+    92%{
+        margin-left: 35px;
+        text-shadow: 5px 0px red;
+    }
+    95%{
+        margin-left: -35px;
+        text-shadow: 0px 5px blue;
+    }
+    97%{
+        margin-left: 35px;
+        text-shadow: -5px 0px red;
+    }
+    99.9%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 
 .p6.on{
@@ -806,124 +1398,4 @@ You probably want to change the styling.
         margin-top: 24px;
         opacity: 0.3;
     }
-}
-
-
-.sound1 #iconHolder{
-    animation: showIconAlert 2s linear;
-}
-@-webkit-keyframes showIconAlert {
-    0% {
-        background-image: url(img/alert.png);
-    }
-    99.9% {
-        background-image: url(img/alert.png);
-    }
-    100%{
-        background-image: none;
-    }
-}
-.sound2 #iconHolder{
-    animation: showIconWarning 2s linear;
-}
-@-webkit-keyframes showIconWarning {
-    0% {
-        background-image: url(img/warning.png);
-    }
-    99.9% {
-        background-image: url(img/warning.png);
-    }
-    100%{
-        background-image: none;
-    }
-}
-.sound3 #iconHolder{
-    animation: showIconKeepOut 2.7s linear;
-}
-.sound7 #iconHolder{
-    animation: showIconKeepOut2 2.7s linear;
-}
-.sound9 #iconHolder{
-    animation: showIconKeepOut3 2.2s linear;
-}
-@-webkit-keyframes showIconKeepOut {
-    0% {
-        background-image: url(img/keepOut.png);
-    }
-    99.9% {
-        background-image: url(img/keepOut.png);
-    }
-    100%{
-        background-image: none;
-    }
-}
-@-webkit-keyframes showIconKeepOut2 {
-    0% {
-        background-image: url(img/keepOut.png);
-    }
-    99.9% {
-        background-image: url(img/keepOut.png);
-    }
-    100%{
-        background-image: none;
-    }
-}
-@-webkit-keyframes showIconKeepOut3 {
-    0% {
-        background-image: url(img/keepOut.png);
-    }
-    99.9% {
-        background-image: url(img/keepOut.png);
-    }
-    100%{
-        background-image: none;
-    }
-}
-.sound11 #iconHolder{
-    animation: showIconStressed 42.4s linear;
-}
-.sound13 #iconHolder{
-    animation: showIconStressed2 43.3s linear;
-}
-@-webkit-keyframes showIconStressed {
-    0% {
-        background-image: url(img/stressed.png);
-        opacity: 0;
-        margin-top: 6vh;
-    }
-    99.9% {
-        background-image: url(img/stressed.png);
-        opacity: 1;
-        margin-top: 0px;
-    }
-    100%{
-        background-image: none;
-        margin-top: 6vh;
-    }
-}
-@-webkit-keyframes showIconStressed2 {
-    0% {
-        background-image: url(img/stressed.png);
-        opacity: 0;
-        margin-top: 0px;
-        top: 9.5vh;
-    }
-    99.9% {
-        background-image: url(img/stressed.png);
-        opacity: 1;
-        margin-top: 0px;
-        top: 9.2vh;
-    }
-    100%{
-        background-image: none;
-        margin-top: 6vh;
-    }
-}
-
-.testImage{
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: 50% 50%;
-
 }

@@ -55,9 +55,9 @@ captions.push(['65.2','66.6']);
 	//Why don't you say that three times: "within cells interlinked".
 captions.push(['66.6','69.1']);
 
-captions.push(['69.1','70.6']);
-captions.push(['70.6','72.2']);
-captions.push(['72.2','74.2']);
+captions.push(['69.1','70.5']);
+captions.push(['70.7','72.1']);
+captions.push(['72.3','74.2']);
 	// We're done.
 captions.push(['77.1','78.7']);
 captions.push(['80','81.738']);
